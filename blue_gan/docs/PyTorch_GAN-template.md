@@ -2,9 +2,9 @@
 
 repo: https://github.com/eriklindernoren/PyTorch-GAN
 
-pro: 32 algo.
+pros: 32 algo.
 
-con: 6+ years old, missing assets, bugs.
+cons: 6+ years old, missing assets, bugs. 🛑
 
 --table--
 

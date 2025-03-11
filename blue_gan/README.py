@@ -13,7 +13,7 @@ items = README.Items(
         {
             "name": "PyTorch-GAN",
             "marquee": PyTorch_GAN.marquee,
-            "description": "6+ years old, missing assets, bugs.",
+            "description": "6+ years old, missing assets, bugs. 🛑",
             "url": "./blue_gan/docs/PyTorch_GAN.md",
         },
         {
