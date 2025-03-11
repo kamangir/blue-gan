@@ -10,5 +10,11 @@ function blue_gan_run() {
         return 1
     fi
 
-    abcli_log "🪄"
+    # https://github.com/eriklindernoren/PyTorch-GAN?tab=readme-ov-file#bicyclegan
+    pushd $abcli_path_git/PyTorch-GAN/ >/dev/null
+    cd data/
+    bash download_pix2pix_dataset.sh edges2shoes
+    cd ../implementations/bicyclegan/
+    python3 bicyclegan.py
+    popd >/dev/null
 }
