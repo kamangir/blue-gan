@@ -3,11 +3,7 @@ from typing import List
 from blue_options.terminal import show_usage, xtra
 from abcli.help.generic import help_functions as generic_help_functions
 
-from blue_gan import ALIAS
-
-list_of_examples = [
-    "bicyclegan",
-]
+from blue_gan import env
 
 
 def help_run(
@@ -21,11 +17,11 @@ def help_run(
             "@gan",
             "run",
             f"[{options}]",
-            "<implementation>",
+            "<algo>",
         ],
-        "run <implementation>.",
+        "run <algo>.",
         {
-            "implementation(s): {}".format(", ".join(list_of_examples)): [],
+            "algo: {}".format(", ".join(env.BLUE_GAN_LIST_OF_ALGO)): [],
         },
         mono=mono,
     )
