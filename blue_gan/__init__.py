@@ -4,7 +4,7 @@ ICON = "🖌️"
 
 DESCRIPTION = f"{ICON} A command interface for PyTorch-GAN."
 
-VERSION = "4.14.1"
+VERSION = "4.15.1"
 
 REPO_NAME = "blue-gan"
 
