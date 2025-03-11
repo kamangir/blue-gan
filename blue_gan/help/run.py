@@ -4,31 +4,28 @@ from blue_options.terminal import show_usage, xtra
 from abcli.help.generic import help_functions as generic_help_functions
 
 from blue_gan import ALIAS
-from blue_gan.help.run import help_run
+
+list_of_examples = [
+    "bicyclegan",
+]
 
 
-def help_browse(
+def help_run(
     tokens: List[str],
     mono: bool,
 ) -> str:
-    options = "actions|repo"
+    options = "dryrun"
 
     return show_usage(
         [
             "@gan",
-            "browse",
+            "run",
             f"[{options}]",
+            "<implementation>",
         ],
-        "browse blue_gan.",
+        "run <implementation>.",
+        {
+            "implementation(s): {}".format(", ".join(list_of_examples)): [],
+        },
         mono=mono,
     )
-
-
-help_functions = generic_help_functions(plugin_name=ALIAS)
-
-help_functions.update(
-    {
-        "browse": help_browse,
-        "run": help_run,
-    }
-)
