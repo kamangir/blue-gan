@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_gan_run() {
+function blue_gan_PyTorch_GAN() {
     local options=$1
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
 

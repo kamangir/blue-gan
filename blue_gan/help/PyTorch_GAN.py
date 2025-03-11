@@ -6,7 +6,7 @@ from abcli.help.generic import help_functions as generic_help_functions
 from blue_gan import env
 
 
-def help_run(
+def help_PyTorch_GAN(
     tokens: List[str],
     mono: bool,
 ) -> str:
@@ -15,11 +15,11 @@ def help_run(
     return show_usage(
         [
             "@gan",
-            "run",
+            "PyTorch_GAN",
             f"[{options}]",
             "<algo>",
         ],
-        "run <algo>.",
+        "run PyTorch_GAN/<algo>.",
         {
             "algo: {}".format(", ".join(env.BLUE_GAN_LIST_OF_ALGO)): [],
         },
