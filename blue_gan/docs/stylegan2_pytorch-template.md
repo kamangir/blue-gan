@@ -6,8 +6,6 @@ pros: 🔥
 
 cons: 🔥
 
---table--
-
 ```bash
 @help @gan stylegan2_pytorch
 ```

@@ -13,7 +13,7 @@ items = README.Items(
     [
         {
             "name": "stylegan2-pytorch",
-            "marquee": "https://raw.githubusercontent.com/lucidrains/stylegan2-pytorch/master/samples/cities.jpg",
+            "marquee": stylegan2_pytorch.marquee,
             "description": "Simple StyleGan2 for Pytorch 🔥",
             "url": "./blue_gan/docs/stylegan2_pytorch.md",
         },
@@ -53,11 +53,9 @@ def build():
                 "path": "..",
             },
             {
-                "items": PyTorch_GAN.items,
                 "path": "docs/PyTorch_GAN.md",
             },
             {
-                "items": stylegan2_pytorch.items,
                 "path": "docs/stylegan2_pytorch.md",
             },
         ]

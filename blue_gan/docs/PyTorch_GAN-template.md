@@ -6,8 +6,6 @@ pros: 32 algo.
 
 cons: 6+ years old, missing assets, bugs. 🛑
 
---table--
-
 ```bash
 @help @gan PyTorch_GAN
 ```

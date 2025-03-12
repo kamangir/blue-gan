@@ -6,10 +6,6 @@ pros: 🔥
 
 cons: 🔥
 
-|   |
-| --- |
-|  |
-
 ```bash
 @help @gan stylegan2_pytorch
 ```
