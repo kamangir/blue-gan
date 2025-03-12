@@ -27,12 +27,13 @@ def help_ingest(
             "[-|<object-name>]",
             "<ingest-options>",
         ],
-        "browse blue_plugin.",
+        "ingest <dataset> -> <object-name>.",
         {
             "dataset: {}".format(", ".join(env.BLUE_GAN_LIST_OF_DATASETS)): [],
             "ingest-options": [
-                "animal={},count=<-1>".format(
-                    " | ".join(sorted(translate.values())),
+                "animal10: animal=<animal-name>,count=<-1>",
+                "          animal-name: {}".format(
+                    ", ".join(sorted(translate.values()))
                 ),
             ],
         },

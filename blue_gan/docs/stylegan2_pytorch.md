@@ -14,10 +14,11 @@ cons: 🔥
 	[~cache,dataset=<dataset>,dryrun,upload] \
 	[-|<object-name>] \
 	<ingest-options>
- . browse blue_plugin.
+ . ingest <dataset> -> <object-name>.
    dataset: animal10
    ingest-options
-      animal=butterfly | cane | cat | chicken | cow | dog | elefante | elephant | farfalla | gallina | gatto | horse | mucca | ragno | scoiattolo | sheep | squirrel,count=<-1>
+      animal10: animal=<animal-name>,count=<-1>
+                animal-name: butterfly, cane, cat, chicken, cow, dog, elefante, elephant, farfalla, gallina, gatto, horse, mucca, ragno, scoiattolo, sheep, squirrel
 ```
 ```bash
 @gan \
