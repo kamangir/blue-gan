@@ -9,6 +9,12 @@ cons: 🔥
 ## help
 
 ```bash
+@help @gan ingest
+```
+--help-- blue_gan ingest
+
+
+```bash
 @help @gan stylegan2_pytorch
 ```
 --help-- blue_gan stylegan2_pytorch
