@@ -9,9 +9,6 @@ cons: 🔥
 ## help
 
 ```bash
-@help @gan ingest
-```
-```bash
 @gan \
 	ingest \
 	[~cache,dataset=<dataset>,dryrun,upload] \
@@ -21,11 +18,6 @@ cons: 🔥
    dataset: animal10
    ingest-options
       animal=butterfly | cane | cat | chicken | cow | dog | elefante | elephant | farfalla | gallina | gatto | horse | mucca | ragno | scoiattolo | sheep | squirrel,count=<-1>
-```
-
-
-```bash
-@help @gan stylegan2_pytorch
 ```
 ```bash
 @gan \
