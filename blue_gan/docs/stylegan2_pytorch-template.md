@@ -6,11 +6,14 @@ pros: 🔥
 
 cons: 🔥
 
+## help
+
 ```bash
 @help @gan stylegan2_pytorch
 ```
 --help-- blue_gan stylegan2_pytorch
 
+## sample run
 
 🔥
 

@@ -6,11 +6,14 @@ pros: 32 algo.
 
 cons: 6+ years old, missing assets, bugs. 🛑
 
+## help
+
 ```bash
 @help @gan PyTorch_GAN
 ```
 --help-- blue_gan PyTorch_GAN
 
+## sample run
 
 ```bash
 @gan PyTorch_GAN - bicyclegan
