@@ -5,4 +5,6 @@ load_env(__name__)
 load_config(__name__)
 
 
-BLUE_GAN_LIST_OF_ALGO = str(get_env("BLUE_GAN_LIST_OF_ALGO")).split("+")
+PYTORCH_GAN_LIST_OF_ALGO = str(get_env("PYTORCH_GAN_LIST_OF_ALGO")).split("+")
+
+BLUE_GAN_LIST_OF_DATASETS = str(get_env("BLUE_GAN_LIST_OF_DATASETS")).split("+")

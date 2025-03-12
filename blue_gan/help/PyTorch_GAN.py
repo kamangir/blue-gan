@@ -21,7 +21,7 @@ def help_PyTorch_GAN(
         ],
         "run PyTorch_GAN/<algo>.",
         {
-            "algo: {}".format(", ".join(env.BLUE_GAN_LIST_OF_ALGO)): [],
+            "algo: {}".format(", ".join(env.PYTORCH_GAN_LIST_OF_ALGO)): [],
         },
         mono=mono,
     )

@@ -11,4 +11,5 @@ def test_required_env():
 
 
 def test_blue_gan_env():
-    assert env.BLUE_GAN_LIST_OF_ALGO
+    assert env.PYTORCH_GAN_LIST_OF_ALGO
+    assert env.BLUE_GAN_LIST_OF_DATASETS

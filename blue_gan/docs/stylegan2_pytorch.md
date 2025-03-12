@@ -24,6 +24,12 @@ cons: 🔥
 🔥
 
 ```bash
+@gan ingest dataset=animal10 -
+```
+
+🔥
+
+```bash
 @gan stylegan2_pytorch - -
 ```
 
