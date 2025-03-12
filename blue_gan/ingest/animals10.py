@@ -21,7 +21,6 @@ translate = {
     "pecora": "sheep",
     "scoiattolo": "squirrel",
     "dog": "cane",
-    "cavallo": "horse",
     "elephant": "elefante",
     "butterfly": "farfalla",
     "chicken": "gallina",
