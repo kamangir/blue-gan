@@ -2,12 +2,14 @@
 
 function blue_gan_ingest() {
     local options=$1
-    local do_dryrun=$(abcli_option_int "$options" dryrun 0)
-    local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
-    local use_cache=$(abcli_option_int "$options" cache 1)
     local dataset=$(abcli_option "$options" dataset animal10)
+    local do_dryrun=$(abcli_option_int "$options" dryrun 0)
+    local do_upload=$(abcli_option_int "$options" upload 0)
+    local use_cache=$(abcli_option_int "$options" cache 1)
 
     local object_name=$(abcli_clarify_object $2 $dataset-$(abcli_string_timestamp_short))
+
+    local ingest_options=$3
 
     if [[ "$dataset" == "animal10" ]]; then
         local cache_object_name=""
@@ -53,10 +55,21 @@ function blue_gan_ingest() {
                 dataset=$dataset,full_cache=1
         fi
 
-        abcli_log "ingesting $cache_object_name -> $object_name ..."
+        local animal=$(abcli_option "$ingest_options" animal cat)
+        local count=$(abcli_option "$ingest_options" count 10)
+        abcli_log "ingesting $cache_object_name/$animal -count=$count-> $object_name ..."
 
-        :
+        abcli_eval dryrun=$do_dryrun \
+            python3 -m blue_gan.ingest $dataset \
+            --animal $animal \
+            --count $count \
+            --cache_object_name $cache_object_name \
+            --object_name $object_name
+        [[ $? -ne 0 ]] && return 1
 
+        abcli_mlflow_tags_set \
+            $object_name \
+            contains_$animal=1
     else
         abcli_log_error "$dataset: dataset not found".
         return 1

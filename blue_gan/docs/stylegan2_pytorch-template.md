@@ -15,14 +15,23 @@ cons: 🔥
 
 ## sample run
 
-🔥
+🔥 run on GPU (SageMaker)
 
 ```bash
-@gan ingest dataset=animal10 -
+runme() {
+    local object_name=stylegan2_pytorch-$(@@timestamp)
+
+    @gan ingest \
+        dataset=animal10 \
+        $object_name \
+        animals=cat,count=20
+
+   @gan stylegan2_pytorch \
+        ~download \
+        $object_name
+}
+
+runme
 ```
 
 🔥
-
-```bash
-@gan stylegan2_pytorch - -
-```
