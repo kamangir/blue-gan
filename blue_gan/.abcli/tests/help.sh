@@ -18,6 +18,7 @@ function test_blue_gan_help() {
         "@gan test list" \
         \
         "@gan PyTorch_GAN" \
+        "@gan stylegan2_pytorch" \
         \
         "@gan browse" \
         \
