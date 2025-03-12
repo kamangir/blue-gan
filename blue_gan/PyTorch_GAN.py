@@ -7,9 +7,7 @@ url = "https://github.com/eriklindernoren/PyTorch-GAN"
 items = README.Items(
     [
         {
-            "name": "PyTorch-GAN",
             "marquee": marquee,
-            "description": "Code base.",
             "url": url,
         }
     ]

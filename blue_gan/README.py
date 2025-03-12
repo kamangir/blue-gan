@@ -5,11 +5,18 @@ from blue_objects import file, README
 
 from blue_gan import NAME, VERSION, ICON, REPO_NAME
 from blue_gan import PyTorch_GAN
+from blue_gan import stylegan2_pytorch
 from blue_gan.help.functions import help_functions
 
 
 items = README.Items(
     [
+        {
+            "name": "stylegan2-pytorch",
+            "marquee": "https://raw.githubusercontent.com/lucidrains/stylegan2-pytorch/master/samples/cities.jpg",
+            "description": "Simple StyleGan2 for Pytorch 🔥",
+            "url": "./blue_gan/docs/stylegan2_pytorch.md",
+        },
         {
             "name": "PyTorch-GAN",
             "marquee": PyTorch_GAN.marquee,
@@ -48,6 +55,10 @@ def build():
             {
                 "items": PyTorch_GAN.items,
                 "path": "docs/PyTorch_GAN.md",
+            },
+            {
+                "items": stylegan2_pytorch.items,
+                "path": "docs/stylegan2_pytorch.md",
             },
         ]
     )

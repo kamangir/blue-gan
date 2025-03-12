@@ -8,7 +8,7 @@ cons: 6+ years old, missing assets, bugs. 🛑
 
 |   |
 | --- |
-| [`PyTorch-GAN`](https://github.com/eriklindernoren/PyTorch-GAN) [![image](https://github.com/eriklindernoren/PyTorch-GAN/raw/master/assets/logo.png)](https://github.com/eriklindernoren/PyTorch-GAN) Code base. |
+|  |
 
 ```bash
 @help @gan PyTorch_GAN
