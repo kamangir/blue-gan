@@ -17,6 +17,7 @@ items = README.Items(
             "description": "Simple StyleGan2 for Pytorch 🔥",
             "url": "./blue_gan/docs/stylegan2_pytorch.md",
         },
+        {},
         {
             "name": "PyTorch-GAN",
             "marquee": PyTorch_GAN.marquee,
