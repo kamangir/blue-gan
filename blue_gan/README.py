@@ -36,6 +36,7 @@ def build():
     return all(
         README.build(
             items=readme.get("items", []),
+            cols=readme.get("cols", 3),
             path=os.path.join(file.path(__file__), readme["path"]),
             ICON=ICON,
             NAME=NAME,
@@ -50,6 +51,7 @@ def build():
         for readme in [
             {
                 "items": items,
+                "cols": 2,
                 "path": "..",
             },
             {
