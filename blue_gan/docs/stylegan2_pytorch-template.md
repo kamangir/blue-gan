@@ -30,7 +30,7 @@ runme() {
     @gan ingest \
         dataset=animal10 \
         $object_name \
-        animals=cat,count=20
+        animal=cat,count=20
 
    @gan stylegan2_pytorch \
         ~download \
