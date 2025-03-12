@@ -27,6 +27,7 @@ items = README.Items(
         {
             "name": "What is a GAN?",
             "marquee": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/11/11/ML-6149-image025.jpg",
+            "description": "Background review.",
             "url": "https://aws.amazon.com/what-is/gan/",
         },
     ]
