@@ -4,7 +4,7 @@ ICON = "🖌️"
 
 DESCRIPTION = f"{ICON} A command interface to GANs."
 
-VERSION = "4.26.1"
+VERSION = "4.27.1"
 
 REPO_NAME = "blue-gan"
 
