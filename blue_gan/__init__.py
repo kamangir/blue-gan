@@ -2,13 +2,13 @@ NAME = "blue_gan"
 
 ICON = "🖌️"
 
-DESCRIPTION = f"{ICON} A command interface for PyTorch-GAN."
+DESCRIPTION = f"{ICON} A command interface to GANs."
 
-VERSION = "4.16.1"
+VERSION = "4.45.1"
 
 REPO_NAME = "blue-gan"
 
-MARQUEE = "https://github.com/eriklindernoren/PyTorch-GAN/raw/master/assets/logo.png"
+MARQUEE = "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/11/11/ML-6149-image025.jpg"
 
 ALIAS = "@gan"
 
