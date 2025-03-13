@@ -45,7 +45,7 @@ cons: 🔥
 
 @gan stylegan2_pytorch \
     ~download .. . \
-    --num_train_steps 10
+    --num_train_steps 100
 
 mv -v default/* ./
 
@@ -53,9 +53,13 @@ mv -v default/* ./
     extensions=jpg,push .
 ```
 
+### `--num_train_steps 10`
+
 
 | 0-ema | 0-mr | 0 |
 |-|-|-|
 | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-15nxc4/0-ema.jpg?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-15nxc4/0-mr.jpg?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-15nxc4/0.jpg?raw=true) |
+
+### `--num_train_steps 100`
 
 🔥
