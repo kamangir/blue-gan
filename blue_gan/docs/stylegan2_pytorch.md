@@ -46,6 +46,16 @@ cons: 🔥
 @gan stylegan2_pytorch \
     ~download .. . \
     --num_train_steps 10
+
+mv -v default/* ./
+
+@assets publish \
+    extensions=jpg,push .
 ```
+
+
+| 0-ema | 0-mr | 0 |
+|-|-|-|
+| ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-15nxc4/0-ema.jpg?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-15nxc4/0-mr.jpg?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-15nxc4/0.jpg?raw=true) |
 
 🔥
