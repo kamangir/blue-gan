@@ -1,4 +1,4 @@
-# stylegan2_pytorch 🔥
+# stylegan2_pytorch
 
 Repo: https://github.com/lucidrains/stylegan2-pytorch
 
@@ -50,4 +50,4 @@ set:::object_name results-2025-03-12-476vr7
 |-|-|-|
 | assets:::get:::object_name/0-ema.jpg | assets:::get:::object_name/0-mr.jpg | assets:::get:::object_name/0.jpg |
 
-🔥
+Results are expected at `--num_train_steps 150000` 🤔

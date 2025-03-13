@@ -1,4 +1,4 @@
-# stylegan2_pytorch 🔥
+# stylegan2_pytorch
 
 Repo: https://github.com/lucidrains/stylegan2-pytorch
 
@@ -67,4 +67,4 @@ mv -v default/* ./
 |-|-|-|
 | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-476vr7/0-ema.jpg?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-476vr7/0-mr.jpg?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/results-2025-03-12-476vr7/0.jpg?raw=true) |
 
-🔥
+Results are expected at `--num_train_steps 150000` 🤔
