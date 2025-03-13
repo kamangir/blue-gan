@@ -1,10 +1,9 @@
 # PyTorch_GAN 🛑
 
-repo: https://github.com/eriklindernoren/PyTorch-GAN
+Repo: https://github.com/eriklindernoren/PyTorch-GAN
 
-pros: 32 algo.
-
-cons: 6+ years old, missing assets, bugs. 🛑
+- Implementation of 32 algo.
+- 6+ years old, missing assets, bugs. 🛑
 
 ## help
 

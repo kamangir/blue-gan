@@ -1,10 +1,10 @@
 # stylegan2_pytorch 🔥
 
-repo: https://github.com/lucidrains/stylegan2-pytorch
+Repo: https://github.com/lucidrains/stylegan2-pytorch
 
-pros: 🔥
-
-cons: 🔥
+- Generates novel images based on a set of training images. 
+- Recent and stable.
+- Basic implementation.
 
 ## help
 
@@ -43,5 +43,11 @@ set:::object_name results-2025-03-12-15nxc4
 | assets:::get:::object_name/0-ema.jpg | assets:::get:::object_name/0-mr.jpg | assets:::get:::object_name/0.jpg |
 
 ### `--num_train_steps 100`
+
+set:::object_name results-2025-03-12-476vr7
+
+| 0-ema | 0-mr | 0 |
+|-|-|-|
+| assets:::get:::object_name/0-ema.jpg | assets:::get:::object_name/0-mr.jpg | assets:::get:::object_name/0.jpg |
 
 🔥
