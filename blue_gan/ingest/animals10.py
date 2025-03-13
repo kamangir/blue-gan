@@ -67,7 +67,7 @@ def ingest(
             filename,
             objects.path_of(
                 object_name=object_name,
-                filename="data/{}".format(file.name_and_extension(filename)),
+                filename=file.name_and_extension(filename),
             ),
             log=True,
         ):

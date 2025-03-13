@@ -16,21 +16,17 @@ cons: 🔥
 🔥 run on GPU (SageMaker)
 
 ```bash
-runme() {
-    local object_name=stylegan2_pytorch-$(@@timestamp)
+@select dataset-$(@@timestamp)
 
-    @gan ingest \
-        dataset=animal10 \
-        $object_name \
-        animal=cat,count=20
+@gan ingest \
+    dataset=animal10 . \
+    animal=cat,count=20
 
-   @gan stylegan2_pytorch \
-        ~download \
-        $object_name \
-        --num_train_steps 100
-}
+@select results-$(@@timestamp)
 
-runme
+@gan stylegan2_pytorch \
+    ~download,~upload .. . \
+    --num_train_steps 100
 ```
 
 🔥

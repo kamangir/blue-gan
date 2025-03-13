@@ -7,16 +7,17 @@ def help_stylegan2_pytorch(
     tokens: List[str],
     mono: bool,
 ) -> str:
-    options = xtra("dryrun,~upload", mono=mono)
+    options = xtra("~download,dryrun,~upload", mono=mono)
 
-    args = []
+    args = ["<args>"]
 
     return show_usage(
         [
             "@gan",
             "stylegan2_pytorch",
             f"[{options}]",
-            "[-|<object-name>]",
+            "[.|<dataset-object-name>]",
+            "[-|<results-object-name>]",
         ]
         + args,
         "run stylegan2_pytorch.",
