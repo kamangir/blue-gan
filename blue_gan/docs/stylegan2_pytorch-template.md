@@ -13,7 +13,7 @@ cons: 🔥
 
 ## sample run
 
-🔥 run on GPU (SageMaker)
+🔋 on GPU (SageMaker)
 
 ```bash
 @select dataset-$(@@timestamp)
@@ -25,7 +25,7 @@ cons: 🔥
 @select results-$(@@timestamp)
 
 @gan stylegan2_pytorch \
-    ~download,~upload .. . \
+    ~download .. . \
     --num_train_steps 100
 ```
 

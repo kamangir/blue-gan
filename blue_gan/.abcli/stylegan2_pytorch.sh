@@ -22,6 +22,14 @@ function blue_gan_stylegan2_pytorch() {
         "${@:4}"
     [[ $? -ne 0 ]] && return 1
 
+    abcli_eval dryrun=$do_dryrun \
+        stylegan2_pytorch \
+        --generate \
+        --data $dataset_object_path \
+        --results_dir $results_object_path \
+        --models_dir $results_object_path/models
+    [[ $? -ne 0 ]] && return 1
+
     [[ "$do_upload" == 1 ]] &&
         abcli_upload - $output_object_name
 
