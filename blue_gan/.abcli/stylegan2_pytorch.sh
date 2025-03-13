@@ -14,6 +14,8 @@ function blue_gan_stylegan2_pytorch() {
     local results_object_name=$(abcli_clarify_object $3 stylegan2_pytorch-results-$(abcli_string_timestamp_short))
     local results_object_path=$ABCLI_OBJECT_ROOT/$results_object_name
 
+    abcli_log "stylegan2_pytorch: $dataset_object_name -> $results_object_name ..."
+
     abcli_eval dryrun=$do_dryrun \
         stylegan2_pytorch \
         --data $dataset_object_path \

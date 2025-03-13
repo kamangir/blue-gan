@@ -45,7 +45,7 @@ cons: 🔥
 
 @gan stylegan2_pytorch \
     ~download .. . \
-    --num_train_steps 100
+    --num_train_steps 10
 ```
 
 🔥
