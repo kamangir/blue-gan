@@ -3,6 +3,7 @@ from tqdm import tqdm
 
 from blueness import module
 from blue_objects import objects, file
+from blue_objects.metadata import post_to_object
 
 from blue_gan import NAME
 from blue_gan.logger import logger
@@ -66,7 +67,7 @@ def ingest(
             filename,
             objects.path_of(
                 object_name=object_name,
-                filename=file.name_and_extension(filename),
+                filename="data/{}".format(file.name_and_extension(filename)),
             ),
             log=True,
         ):
@@ -76,4 +77,13 @@ def ingest(
         if count != -1 and count_copied >= count:
             break
 
-    return True
+    return post_to_object(
+        object_name,
+        NAME.replace(".", "_"),
+        {
+            "animal": animal,
+            "animal_it": animal_it,
+            "cache_object_name": cache_object_name,
+            "count": count_copied,
+        },
+    )

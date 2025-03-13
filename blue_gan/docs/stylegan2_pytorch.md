@@ -43,7 +43,8 @@ runme() {
 
    @gan stylegan2_pytorch \
         ~download \
-        $object_name
+        $object_name \
+        --num_train_steps 100
 }
 
 runme
